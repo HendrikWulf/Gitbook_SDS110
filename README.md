@@ -13,15 +13,15 @@ The goal is not to simply replicate the example provided, but to _adapt and appl
 
 The labs are designed to strengthen your practical understanding of core concepts such as spatial data management, visualization, and analysis using tools like [QGIS](./#why-qgis). You’ll work hands-on with real-world data to solve meaningful spatial problems and prepare for more advanced geospatial tasks ahead.
 
-Lab sessions take place on-site. Please bring your own laptop so you can use a second screen. If you’d like to continue using QGIS beyond the lab or in other courses, [installing QGIS](https://qgis.org/download/) on your own machine is highly recommended (see [Getting Started](https://app.gitbook.com/o/y8IV2leCLZmUIh4iGtqg/s/iGEFlU3Y0YjkNsNoWM7s/) below).
+Lab sessions take place on-site. Please bring your own laptop so you can use a second screen. If you’d like to continue using QGIS beyond the lab or in other courses, [installing QGIS](https://qgis.org/download/) on your own machine is **highly recommended** (see [Getting Started](https://app.gitbook.com/o/y8IV2leCLZmUIh4iGtqg/s/iGEFlU3Y0YjkNsNoWM7s/) below).
 
 Please note that we will not be providing any pre-processed data. You will be in control of your project from start to finish. Feel free to develop your own ideas as you go. We are happy to support and guide you along the way.
 
-These Labs form part of the [SDS110 course](https://www.geo.uzh.ch/en/studying/sds_minor/30_minor.html) offered by the [Geography Department at UZH](https://www.geo.uzh.ch/en.html). All material is available under a CC-BY 4.0 license.
+These Labs form part of the [SDS110 course](https://www.geo.uzh.ch/en/studying/prospective-students/minors/sds-minor/30_minor.html) offered by the [Geography Department at UZH](https://www.geo.uzh.ch/en.html). All material is available under a CC-BY 4.0 license.
 
 ## Space and Time
 
-Lab location: Y25-J-09/10 ([how to find us](https://www.geo.uzh.ch/en/units/rss/events/how-to-find-us.html))
+Lab location: Y25-J-09/10 ([how to find us](https://www.geo.uzh.ch/en/units/rss/how-to-find-us.html))
 
 Lab hours: Fridays 16:00 - 18:00&#x20;
 
