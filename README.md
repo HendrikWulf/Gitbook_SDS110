@@ -1,5 +1,5 @@
 ---
-description: All you need to know about the labs
+description: All you need to know about the SDS110 labs
 icon: info
 ---
 
