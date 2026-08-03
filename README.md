@@ -17,7 +17,7 @@ Lab sessions take place on-site. Please bring your own laptop so you can use a s
 
 Please note that we will not be providing any pre-processed data. You will be in control of your project from start to finish. Feel free to develop your own ideas as you go. We are happy to support and guide you along the way.
 
-These Labs form part of the [SDS110 course](https://www.geo.uzh.ch/en/studying/prospective-students/minors/sds-minor/30_minor.html) offered by the [Geography Department at UZH](https://www.geo.uzh.ch/en.html). All material is available under a CC-BY 4.0 license.
+These Labs form part of the [SDS110 course](https://studentservices.uzh.ch/uzh/launchpad/#ZVVZ-display?Id=51270464\&ObjectType=SM\&PiqSession=003\&PiqYear=2026\&sap-app-origin-hint=&/details/2026/003/SM/51270464) offered by the [Geography Department at UZH](https://www.geo.uzh.ch/en.html). All material is available under a CC-BY 4.0 license.
 
 ## Space and Time
 
@@ -49,7 +49,7 @@ You're always welcome to approach us directly during the lab. We’re happy to s
 
 #### Outside of Labs
 
-For questions related to the exercises, always use the _respective lab channels on_ [_Teams_](https://teams.microsoft.com/l/team/19%3AEb2HLy07-UauWIFPltYUxNqgrhubHaeO-mk__nvFlHM1%40thread.tacv2/conversations?groupId=5011d0cc-7bc6-4952-9fa3-5fffdf0f0473\&tenantId=c7e438db-e462-4c22-a90a-c358b16980b3). This way, everyone can jump in to help, and benefit from shared answers.&#x20;
+For questions related to the exercises, always use the _respective lab channels on_ [_Teams_](https://teams.microsoft.com/l/team/19%3AStFeoiIZGM5A3akken9stExLm0Joa6wkYh-qJVqR4xA1%40thread.tacv2/conversations?groupId=4d429856-e2c1-495a-94e2-f7db611676ef\&tenantId=c7e438db-e462-4c22-a90a-c358b16980b3). This way, everyone can jump in to help, and benefit from shared answers.&#x20;
 
 > **Best practice:** When posting a question, describe your issue clearly and include:
 >
