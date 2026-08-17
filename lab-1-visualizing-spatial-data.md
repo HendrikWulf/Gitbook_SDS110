@@ -461,6 +461,7 @@ To switch between hillshades in the main map view, we simply toggle the visibili
 * [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/) – Hands-on tutorials for beginners and advanced users.
 * [Map Library](https://www.maplibrary.org/943/best-cartographic-design-resources-for-enhanced-map-aesthetics/) – Best practices for map design
 * [Map Making](https://medium.com/nightingale/so-you-want-to-make-a-map-58c7f55f6b20)[ Blog](https://medium.com/nightingale/so-you-want-to-make-a-map-58c7f55f6b20) - So You Want To Make A Map?
+* [somethingaboutmaps](https://somethingaboutmaps.wordpress.com/2026/08/03/a-few-minor-niceties/) - A Few Minor Niceties
 * [Prix Carto](https://www.prixcarto.ch/) - SGK Swiss Society for Cartography
 * [Easter Eggs](https://youtu.be/pH9Am3FgRS0?feature=shared) - QGIS Easter Eggs Explained
 
@@ -471,7 +472,7 @@ To switch between hillshades in the main map view, we simply toggle the visibili
 * [HydroSHEDS / HydroLAKES](https://www.hydrosheds.org/) – High-quality hydrographic data including global lakes and rivers.
 * [ESA WorldCover](https://esa-worldcover.org/) – 10 m resolution global land cover map.
 * [CORINE Land Cover](https://land.copernicus.eu/en/products/corine-land-cover) – Detailed European land cover data.
-* [Global Forest Watch](https://www.globalforestwatch.org/) – Forest cover and loss maps, monitoring tools.
+* [Global Nature Watch](https://globalnaturewatch.org/) – Forest cover and loss maps, monitoring tools.
 * [Global Human Settlement Layer (GHSL)](https://ghsl.jrc.ec.europa.eu/) – Urban and population density data.
 * [OpenStreetMap](https://www.openstreetmap.org/) – Community-driven base map data for roads, buildings, and more.
 
