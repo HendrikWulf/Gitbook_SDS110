@@ -72,6 +72,10 @@ Submit a **brief report** that includes:
 * [x] Clustering analysis of frequently visited places and patterns of regularity vs. variability.
 * [x] Reflection on lifestyle inferences, privacy risks, and notable or surprising findings.
 
+{% hint style="info" %}
+**Limit** your report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+{% endhint %}
+
 ***
 
 #### Why It Matters

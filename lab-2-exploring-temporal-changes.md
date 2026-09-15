@@ -65,6 +65,10 @@ As a Spatial Detective, your case report must include:
 * [x] **Quantitative results**: What changed, and how much?
 * [x] **Reflections**: Any dead ends? Clever workarounds? Insights?
 
+{% hint style="info" %}
+**Limit** your case report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+{% endhint %}
+
 ## Workflow
 
 In this workflow, we will examine how Zurich’s landscape has evolved over time by comparing [historical](https://youtu.be/ag1_i7SvkZU?feature=shared) and contemporary spatial data. First, we will georeference a scanned historic map, then digitise key features (here, water bodies) from the past. Next, we will gather official vector datasets representing the current situation, which we will then use to compare and quantify changes in Zurich’s geography over time.

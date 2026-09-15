@@ -61,6 +61,10 @@ As with all good scientific communication, your map report includes your figure 
 * [x] Reflect on your styling decisions and challenges you encountered
 * [x] Acknowledge and [cite](https://www.citethisforme.com/) sources of design inspiration, if applicable.
 
+{% hint style="danger" %}
+**Limit** your map report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+{% endhint %}
+
 ### Why this matters
 
 This task mirrors what you'll do in future spatial data science projects. In many projects (e.g. MSc thesis) you need to work with open data, choose the right projection, and design maps that communicate clearly and effectively. These skills are directly transferable to later labs, your thesis, and professional projects.

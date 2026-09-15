@@ -59,7 +59,11 @@ Submit a short report (max. 1 page) that includes:
 * [x] **Challenges and Solutions**: What didn’t work at first? How did you troubleshoot?
 * [x] **Reflection and Potential Improvements**: What are you proud of? What would you refine or add with more time?
 
-By completing this lab, you’ll gain valuable experience in web cartography—a key skill in today’s spatial data science toolkit. Time to make your map clickable, accessible, and meaningful!
+{% hint style="info" %}
+**Limit** your report to a maximum of **one page** or 3,000 characters including spaces. Figures and their captions are excluded from this limit.
+{% endhint %}
+
+By completing this lab, you’ll gain valuable experience in web cartography, which is a valuable skill in today’s spatial data science toolkit. Time to make your map clickable, accessible, and meaningful!
 
 ## Workflow
 
