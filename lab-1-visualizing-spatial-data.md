@@ -16,7 +16,7 @@ Welcome to your first lab exercise! In this session, you'll dive into one of the
 By the end of the lab, you are able to:
 
 * Install and use basemap tools (QuickMapServices, XYZ Tiles) to add geographic context to your map.
-* Select and apply an appropriate CRS to ensure accurate spatial representation of your data.
+* Select and apply an appropriate [CRS](https://en.wikipedia.org/wiki/Spatial_reference_system) to ensure accurate spatial representation of your data.
 * Load, reproject, and style multiple spatial datasets (vector, raster, CSV) to create a visually balanced overview map.
 * Compose and export a high-quality map layout including legends, insets, grids, and annotations.
 * Evaluate your cartographic design choices and explain them in an extended caption referencing sources and projection rationale.
@@ -29,7 +29,7 @@ This map will appear in the project proposal, early research reports, and likely
 
 > _“If your map doesn’t make sense, the rest of the proposal might as well be written in Klingon.”_
 
-Your job is to make sure the map speaks clearly, and speaks first.
+Your job is to make sure the map speaks clearly.
 
 ### Your Mission
 
@@ -62,7 +62,7 @@ As with all good scientific communication, your map report includes your figure 
 * [x] Acknowledge and [cite](https://www.citethisforme.com/) sources of design inspiration, if applicable.
 
 {% hint style="danger" %}
-**Limit** your map report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+**Limit** your map report to a maximum of **two pages** or 6,500 characters including spaces. It is fine write less, but make sure you tick all the boxes above. Figures and their captions are excluded from this limit.
 {% endhint %}
 
 ### Why this matters
@@ -78,7 +78,7 @@ You’ll also gain confidence in:
 
 ## Workflow
 
-In this lab, we’ll work through a structured cartographic workflow from selecting a study area and adding basemaps to styling layers and designing a final map layout. Each step builds on the previous one, guiding us through data preparation, coordinate reference systems, visual design, and map composition.  You may find this [video of the Lab-1 workflow](https://youtu.be/L6HmO45Am7M) helpful, if you are unfamiliar with QGIS. \
+In this lab, we’ll work through a structured cartographic workflow from selecting a study area and adding basemaps to styling layers and designing a final map layout. Each step builds on the previous one, guiding us through data preparation, coordinate reference systems, visual design, and map composition. You may find this [video of the Lab-1 workflow](https://youtu.be/L6HmO45Am7M) helpful, if you are unfamiliar with QGIS. \
 Let's start with something fun: basemaps!&#x20;
 
 ### 1. Basemaps
@@ -97,9 +97,7 @@ The QGIS QuickMapServices plugin provides easy access to a wide range of online 
    3. Search for `QuickMapServices` and click Install.&#x20;
 2. Add a Basemap
    1. After installing, go to the `Web` menu.
-   2. Choose `QuickMapServices > Settings > More services` tab.
-   3. Click `"Get contributed pack"` to unlock more basemaps (like Google, ESRI, OSM, etc.).
-   4. Now go to `Web > QuickMapServices` and pick a basemap (e.g., OSM Standard, Google Satellite, or ESRI Topographic).
+   2. Go to `Web > QuickMapServices` and pick a basemap (e.g., OSM Standard, Google Satellite, or ESRI Topo).
 
 {% hint style="info" %}
 **Hint:** Another basemaps plugin you may want to explore is _HCMGIS_.
@@ -160,14 +158,14 @@ If we want to view a specific basemap in our map view we can double-click it to 
 
 #### **WMS / WMTS Layers**
 
-QGIS supports _WMS (Web Map Service)_ and _WMTS (Web Map Tile Service)_ layers, which let us stream high-quality, up-to-date geospatial data from public or institutional servers directly into our project. These services are useful for visualizing geo datasets, such as aerial imagery, land use, protected areas, or infrastructure, without downloading the data.
+QGIS also supports _WMS (Web Map Service)_ and _WMTS (Web Map Tile Service)_ layers, which let us stream high-quality, up-to-date geospatial data from public or institutional servers directly into our project. These services are useful for visualizing spatial datasets, such as aerial imagery, land use, protected areas, or infrastructure, without downloading the data.
 
 To add a WMS or WMTS layer in QGIS:
 
 1. Open the Browser panel (`View > Panels > Browser`)
 2. Right-click on WMS/WMTS and select "New Connection..."
 3. Add the following connection details:
-   * Name: geo.admin.ch (or any name you choose)
+   * Name: `Swiss geodata` (or any name you choose)
    * URL: `https://wms.geo.admin.ch/?VERSION=1.3.0&lang=en`
 
 Once connected, you'll be able to browse and add WMS layers from various Swiss federal offices. These correspond mostly to what is shown on [map.geo.admin.ch](https://map.geo.admin.ch), but are available as interoperable WMS layers for use in your own GIS projects.\
@@ -223,7 +221,7 @@ In this lab, we’ll use the _ETRS89 / LAEA Europe projection (EPSG:3035)_ as ou
 
 #### Layer Composition
 
-A well-designed map relies on thoughtful layer composition to guide the viewer's attention and provide geographic context. In this lab, we use both _vector and raster data_ to build a meaningful visualization of our study area in the European Alps. The _lakes_, our main feature of interest, are polygons displayed in color to stand out clearly against the background. Ground _station locations_ (e.g. webcam validation sites) are shown as point features, also in color, to help link them visually to the analysis. The _area of interest_ is defined by the Alpine Convention Perimeter polygon and highlighted with a subtle transparent fill. To provide geographic orientation without overwhelming the viewer, we include _country boundaries_ and _open water bodies_ in neutral gray tones. A _hillshade raster layer_ is added as the base layer to show the rugged topography of the Alps and surrounding terrain, using light gray tones to enhance readability. This combination of layers—and the order in which they appear—helps balance focus, context, and aesthetics while respecting the different data types (vector for features and boundaries, raster for elevation). Understanding how to organize and style layers is a key part of effective cartographic design. But first, we collect the data we for the layers.
+A well-designed map relies on [thoughtful layer composition](https://en.wikipedia.org/wiki/Visual_hierarchy) to guide the viewer's attention and provide geographic context. In this lab, we use both _vector and raster data_ to build a meaningful visualization of our study area in the European Alps. The _lakes_, our main feature of interest, are polygons displayed in color to stand out clearly against the background. Ground _station locations_ (e.g. webcam validation sites) are shown as point features, also in color, to help link them visually to the analysis. The _area of interest_ is defined by the Alpine Convention Perimeter polygon and highlighted with a subtle transparent fill. To provide geographic orientation without overwhelming the viewer, we include _country boundaries_ and _open water bodies_ in neutral gray tones. A _hillshade raster layer_ is added as the base layer to show the rugged topography of the Alps and surrounding terrain, using light gray tones to enhance readability. This combination of layers—and the order in which they appear—helps balance focus, context, and aesthetics while respecting the different data types (vector for features and boundaries, raster for elevation). Understanding how to organize and style layers is a key part of effective cartographic design. But first, we collect the data we for the layers.
 
 ### 3. Data acquisition
 
