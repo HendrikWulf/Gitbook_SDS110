@@ -229,7 +229,7 @@ There are often multiple ways to access the data we need for a map project. In t
 
 #### Basemap
 
-The ESRI hillshade basemap is useful for visualizing topography. However, in QGIS version 3.28.15, it only displays correctly when the project is set to EPSG:3857 or EPSG:4326. This limitation affects "only" the main QGIS map view. Our final map layout will render the hillshade basemap correctly in any projection.
+The ESRI hillshade basemap is useful for visualizing topography. However, it may only display correctly when the project projection (statusbar at the bottom right) is set to EPSG:3857 or EPSG:4326. This limitation affects "only" the main QGIS map view. Our final map layout will render the hillshade basemap correctly in any projection.
 
 If you prefer to create your own hillshade, check out the "[The extra mile](lab-1-visualizing-spatial-data.md#optional-the-extra-mile)" section later on. Otherwise, we'll use the ESRI hillshade basemap and keep the project CRS in EPSG:3857 for visualization purposes, while the data itself and the final map layout will use EPSG:3035.
 
@@ -273,11 +273,11 @@ Below is a selection of open-access datasets for various land cover types that y
 
 ### 4. Data processing
 
-Now that all datasets are downloaded, we need to prepare them by selecting only the relevant features and reprojecting all datasets to a common CRS. This ensures that all layers align correctly and can be combined into a coherent map
+Now that all required datasets are downloaded, we need to prepare them by selecting only the relevant features and reprojecting all datasets to a common CRS. This ensures that all layers align correctly and can be combined into a coherent map
 
 #### Reprojection
 
-Spatial datasets often come in different coordinate reference systems (CRS), which can lead to misalignment when combining them in a map project. To ensure all layers align correctly, it’s important to _reproject all datasets to a common CRS_ (EPSG:3035 in this pan-European mapping project).
+Spatial datasets often come in different coordinate reference systems (CRS), which can lead to misalignment when combining them in a map project. To ensure all layers align correctly, it’s important to _reproject all datasets to a common CRS_ ([EPSG:3035](https://epsg.io/3035) in this pan-European mapping project).
 
 We can load our datasets into QGIS by simply dragging them into the _Layers panel,_ or by using the _Data Source Manager_ (accessible via the toolbar symbol <img src=".gitbook/assets/Screenshot 2025-04-04 at 17.02.49.png" alt="" data-size="line"> or `Layer > Add Layer > ...`).
 
@@ -289,7 +289,7 @@ To reproject our data:
 * **For raster layers**:\
   Use the _Warp (Reproject)_ tool:\
   `Raster > Projections > Warp (Reproject)`\
-  Choose EPSG:3035 as the target CRS and specify a file name for the output as a .tif file.
+  Choose `EPSG:3035` as the target CRS and specify a file name for the output as a .tif file.
 
 <figure><img src=".gitbook/assets/Screenshot 2025-04-04 at 17.34.58.png" alt=""><figcaption><p>Select and reproject (export) the lakes in our area of interest </p></figcaption></figure>
 
@@ -303,7 +303,7 @@ The _HydroLAKES_ dataset covers lakes worldwide, but for this project, we only n
    * Set HydroLAKES as the input layer (select features from).
    * Set Alpine Convention as the comparison layer.
    * Keep _“intersect”_ as the spatial relationship.
-4. Open _Advanced Parameters_ (<img src=".gitbook/assets/Screenshot 2025-04-04 at 17.30.09.png" alt="" data-size="line">) and set Invalid feature filtering to "Do not filter".
+4. Open _Advanced Options_ (<img src=".gitbook/assets/Screenshot 2025-04-04 at 17.30.09.png" alt="" data-size="line">) and set "_Invalid feature filtering_" to "_Do not filter_".
 5. Click _Run_ to select all intersecting lakes.
 
 Then, right-click the HydroLAKES layer and choose `Export > Save Selected Features As...` to create a new layer containing only the Alpine lakes in the EPSG:3035 projection.
@@ -322,15 +322,15 @@ For our project, we also use webcam data for validation purposes. We can easily 
    * Under Geometry Definition:
      * Choose Point coordinates.
      * Set X field to `Lon` and Y field to `Lat`.
-   * Make sure Geometry CRS is set to EPSG:4326 – WGS 84 (this matches standard latitude/longitude).
-   * Click Add and then Close.
-3. Right-click the layer to export it in the EPSG:3035 project projection
+   * Make sure Geometry CRS is set to `EPSG:4326 – WGS 84` (this matches standard latitude/longitude).
+   * Click `Add` and then Close.
+3. Right-click the layer to export it in the `EPSG:3035` project projection
 
 #### Layer styling
 
 Now that we have downloaded and projected all the data, we should arrange and style it to create a clear, readable, and visually appealing map. A well-designed map draws attention to key features, supports interpretation, and avoids visual clutter. By using the Layer Styling panel, we can control how each layer is displayed and establish a strong visual hierarchy, ensuring that important elements stand out while background layers remain subtle.&#x20;
 
-We can activate the Layer Styling panel in the Layers panel (<img src=".gitbook/assets/Screenshot 2025-04-08 at 16.12.47.png" alt="" data-size="line">) or via `View > Layers > Layer Styling Panel` .
+We can activate the Layer Styling panel in the Layers panel (<img src=".gitbook/assets/Screenshot 2025-04-08 at 16.12.47.png" alt="" data-size="line">) or via `View > Panels > Layer Styling` .
 
 {% hint style="danger" %}
 **Hint:** Save your QGIS project regularly (File > Save or Ctrl+S)! This helps you avoid losing your work in case the program crashes.
@@ -497,6 +497,6 @@ To switch between hillshades in the main map view, we simply toggle the visibili
 
 ## References
 
-Gandhi, U. (2025) _Introduction to QGIS_, _Spatial Thoughts_. Available at: [https://spatialthoughts.com/courses/introduction-to-qgis/](https://spatialthoughts.com/courses/introduction-to-qgis/) (Accessed: 12 April 2025).
+Gandhi, U. (2025) _Introduction to QGIS_, _Spatial Thoughts_. Available at: [https://spatialthoughts.com/courses/introduction-to-qgis/](https://spatialthoughts.com/courses/introduction-to-qgis/) (Accessed: 16 September 2026).
 
-Brechbühler, M. (2022) _Licmonitoring.com_, _licmonitoring.com_. Available at: https://www.licmonitoring.com/ (Accessed: 12 April 2025).
+Brechbühler, M. (2022) _Licmonitoring.com_, _licmonitoring.com_. Available at: [https://www.licmonitoring.com/](https://www.licmonitoring.com/) (Accessed: 16 September 2026).
