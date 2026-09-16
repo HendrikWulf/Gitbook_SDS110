@@ -483,6 +483,7 @@ To switch between hillshades in the main map view, we simply toggle the visibili
 * [ESRI Basemap Services](https://www.arcgis.com/home/gallery.html?sortField=relevance\&sortOrder=desc\&searchTerm=basemaps\&focus=layers-weblayers-tiles-wmts) – Gallery of ready-to-use basemaps.
 * [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) – Registry of Open Data on AWS
 * [USGS Earth Explorer](https://earthexplorer.usgs.gov/) – DEMs and satellite imagery (e.g., SRTM, Landsat).
+* [Eduard](https://eduard.earth/) – beautiful and accurate Swiss-style shaded relief images for maps.
 
 **Coordinate Systems**
 
