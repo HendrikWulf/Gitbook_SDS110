@@ -249,7 +249,7 @@ Natural Earth offers a collection of open, public-domain datasets covering vario
 
 #### Area of interest
 
-Our _Area Of Interest_ (AOI) is defined by the Alpine Convention Perimeter, which we can download [here](https://www.atlas.alpconv.org/layers/geonode_data:geonode:Alpine_Convention_Perimeter_2018_v2).
+Our _Area Of Interest_ (AOI) is defined by the Alpine Convention Perimeter, which we can download [here](https://www.atlas.alpconv.org/catalogue/#/dataset/432).
 
 #### Land cover
 
