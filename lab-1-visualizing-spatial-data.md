@@ -315,7 +315,7 @@ For our project, we also use webcam data for validation purposes. We can easily 
 1. Prepare our CSV file
    * Make sure your file includes _latitude and longitude columns_ (in this case, `Lat` and `Lon`)&#x20;
    * Make sure it is saved with the `.csv` extension.
-   * We can download the sample CSV file for this project [here](https://drive.google.com/file/d/1pSOBt0crHNtDhADyItUXY6ve6lEq3TGN/view?usp=sharing).
+   * We can download the sample CSV file for this project [here](https://data.source.coop/giuz/sds110/lab_01/webcam_locations.csv).
 2. Load the CSV into QGIS
    * Go to `Layer > Add Layer > Add Delimited Text Layer…`
    * Click "…" next to _File name_ and select your CSV file.
