@@ -241,7 +241,7 @@ If you prefer to create your own hillshade, check out the "[The extra mile](lab-
 
 Natural Earth offers a collection of open, public-domain datasets covering various global features. For this project, we will download the 1:10 million scale datasets for oceans and countries.
 
-* oceans: [https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/)
+* oceans: [https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/)
 * land: [https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/)
 * countries: [https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)
 
