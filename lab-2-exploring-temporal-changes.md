@@ -205,7 +205,7 @@ If you're interested in exploring this method, check out the optional task in th
 
 #### Digitizing Historic Waterways
 
-To compare water datasets over time, we first have trace lakes, rivers, and canals visible in the 1867 map of Zurich. Here is how we do it:
+To compare water datasets over time, we first have trace lakes, rivers, and canals visible in the 1867 map of Zurich. Check out the hint below, if you want to speed up the digitizing process. Otherwise, here is how you can do it manually:
 
 1.  **Create a New Vector Layer**
 
@@ -241,7 +241,7 @@ To compare water datasets over time, we first have trace lakes, rivers, and cana
 
 Based on these steps, we can extract and analyze a wide range of meaningful features from the historic map.
 
-{% hint style="info" %}
+{% hint style="success" %}
 **Hint**: Once again, Bunting Labs has come up with cool solution to trace line features on our map using a neural network. This plugin worked reasonably well for me and might save you some time. It's fun, at least! See the [instructions](https://buntinglabs.com/blog/ai-vectorizer-for-qgis-v2-launch) or [video](https://www.youtube.com/watch?v=PKEuQS4sMJE) to use the tool.
 {% endhint %}
 
@@ -314,91 +314,6 @@ To quantify the water extent in each time period:
 {% endhint %}
 
 ***
-
-### Optional: The Extra Mile
-
-For those curious to go further (+1 bonus point), this optional task introduces supervised image classification using the Semi-Automatic Classification Plugin (SCP). We'll classify features such as water (blue), residential buildings (red), and state buildings (brown) from the georeferenced 1867 map of Zurich.
-
-**Step 1: Install the Required Tools**
-
-* _Install SCP Plugin:_
-  * Go to `Plugins → Manage and Install Plugins`
-  * Search for and install: _Semi-Automatic Classification Plugin_
-  * Alternatively, refer to the [official SCP installation guide](https://semiautomaticclassificationmanual.readthedocs.io/en/latest/installation.html)
-* _Install Dependency – remotior-sensus:_\
-  This Python package is required by SCP for classification tasks.
-  * Run this command to find the correct Python path:&#x20;
-  * ```
-    import sys  
-    print(sys.executable)
-    ```
-  * This returns something like:
-  * ```
-    Mac: /Applications/QGIS-LTR.app/Contents/MacOS/
-    Win: C:\Program Files\QGIS 3.28\bin\python3.exe
-    ```
-  *   Open **Terminal** and run:
-
-      ```
-      Mac: /Applications/QGIS-LTR.app/Contents/MacOS/bin/python3 -m pip install remotior-sensus
-      Win: "C:\Program Files\QGIS 3.28\bin\python3.exe" -m pip install remotior-sensus
-      ```
-  * Alternatively, refer to the [official remotior-sensus installation guide](https://remotior-sensus.readthedocs.io/en/latest/installation.html)
-
-**Step 2: Load the Georeferenced Map**
-
-* Open your project in QGIS with the file `Zurich_1867_georef_TPS.tif` already added.
-* Make sure the SCP panel is installed and visible:
-  * &#x20;Right-click on the `toolbar area → check Panels: SCP Dock Panel → check Toolbars: SCP Working Toolsbar` .
-
-**Step 3: Set Up the Band Set**
-
-* In SCP Dock Panel, go to the Band Set tab (<img src=".gitbook/assets/Screenshot 2025-05-16 at 15.09.37.png" alt="" data-size="line">).
-* Click Open File (<img src=".gitbook/assets/Screenshot 2025-05-16 at 15.11.08.png" alt="" data-size="line">), select the historic map (scanned images will add 3 bands - R, G, B).
-
-**Step 4: Create Training Samples (ROIs)**
-
-* As done in the section of [digitizing the waterways](lab-2-exploring-temporal-changes.md#digitizing-historic-waterways) create a New GeoPackage Layer to select training data for the classifier.&#x20;
-* Add two field for the `class_name` (Text) and the `class_id` (Integer).
-* Use the Draw ROI Polygon tool () to manually outline several small areas for each class directly on the map.
-* Create new classes:
-  * `1 - Water` (blue)
-  * `2 - Houses` (red roofs)
-  * `3 - State Buildings` (brown)
-  * `4 - Background` (white)
-  * `5 - Outlines` (grey)
-* Use the Draw ROI Polygon tool to manually outline several small areas for each class directly on the map.
-* Try to include 3–5 ROIs per class, spread across the map to improve accuracy.
-
-**Step 5: Import the Training Samples**
-
-* In the SCP Dock Panel in the _Training Input_ (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.11.37.png" alt="" data-size="line">) tab _Create a new training input_ file (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.02.22.png" alt="" data-size="line">) with a meaningful name (e.g. training.scpx)
-* In the _Basic Tools_ tab (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.04.38.png" alt="" data-size="line">) opt for _Import Signature_ (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.13.23 (1).png" alt="" data-size="line">) and select the _Import vector_ option
-  * Under Select a vector import the Training Samples (ROI) GeoPackage Layer
-  * Adjust the `MC ID field` and `C ID field` to `class_id` in the drop-down menu.
-  * Import vector (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.19.45.png" alt="" data-size="line">)
-* In the _Training Input_ (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.11.37.png" alt="" data-size="line">) tab adjust the color of the parent class.
-
-<figure><img src=".gitbook/assets/Screenshot 2025-05-16 at 17.22.40.png" alt="" width="367"><figcaption><p>Select a color double-clicking the respective column and row</p></figcaption></figure>
-
-* Optional: Colour all ROIs with their respective class colour, then select them and add them to the spectral signature plot (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.49.46.png" alt="" data-size="line">) to evaluate their dissimilarity and spectral overlaps.
-
-<figure><img src=".gitbook/assets/Screenshot 2025-05-16 at 17.53.44.png" alt=""><figcaption><p>The classes Water (blue) and Background (light grey) are spectrally similar</p></figcaption></figure>
-
-**Step 6: Classify the Image**
-
-* Go to the Band Processing (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.26.54.png" alt="" data-size="line">) → Classification tab (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.27.09.png" alt="" data-size="line">).
-* Select a classifier algorithm (e.g., Random Forest or Maximum Likelihood).
-* Activate the Preview option and use the Classification pointer from the toolbar to visually asses the classification quality.
-* Click Run to generate a classified raster.
-* A new layer will appear with each pixel assigned to one of your defined classes.
-
-**Step 7: Review and Vectorize**
-
-* Visually inspect the classified layer and compare it to the original map.
-* Use the Band Processing (<img src=".gitbook/assets/Screenshot 2025-05-16 at 17.26.54 (1).png" alt="" data-size="line">) function Sieve to remove small areas in a raster by replacing them with the value of the neighboring majority class.
-* Convert the classification result to a vector layer:\
-  `Postprocessing → Classification to vector`.
 
 ## Resources
 
