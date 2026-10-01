@@ -191,15 +191,15 @@ Now that we’ve successfully integrated the historic 1867 map of Zurich into ou
 
 In this section, our analysis will focus specifically on _water bodies_, including lakes, rivers, and canals. The goal is to digitally trace the historic water extent from the scanned map and later compare it to current vector data to assess where water bodies have remained or disappeared.
 
-Besides manual digitizing, another approach to extract features from the historic map is supervised image classification followed by vectorization. In this method, you train a classifier to identify patterns (e.g. water, buildings, green areas) based on pixel values and convert the classified image into vector features.
+Besides manual digitizing, another approach to extract features from the historic map is called image segmentation. In this method, you train a algorithm to identify patterns (e.g. water, buildings, green areas) based on pixel values and their spatial context.
 
-| **Pros**                                   | **Cons**                                           |
-| ------------------------------------------ | -------------------------------------------------- |
-| Faster for large areas                     | Requires training samples and classification setup |
-| Consistent application of class rules      | Less accurate for hand-drawn or faded maps         |
-| Good for maps with clear color differences | May misclassify mixed or noisy areas               |
+| **Pros**                                   | **Cons**                                             |
+| ------------------------------------------ | ---------------------------------------------------- |
+| Faster for large areas                     | Requires training samples and image processing setup |
+| Consistent application of class rules      | Requires basic programming experience                |
+| Good for maps with clear color differences | May misclassify mixed or noisy areas                 |
 
-If you're interested in exploring this method, check out the optional task in the "[Extra Mile](lab-2-exploring-temporal-changes.md#optional-the-extra-mile)” section, where we introduce supervised classification using the Semi-Automatic Classification Plugin (SCP).
+If you're interested in exploring these advanced methods, check out [SDS210 and SDS320](https://www.geo.uzh.ch/en/studying/prospective-students/minors/sds-minor/30_minor.html) in the upcoming semesters.
 
 ***
 
@@ -332,7 +332,6 @@ To quantify the water extent in each time period:
 * [Bunting Labs](https://buntinglabs.com/) - Plugins for AI-tools to georeference and vectorize map data
 * [QGIS Documentation](https://docs.qgis.org/3.40/en/docs/user_manual/index.html) – Official user guide, manuals, and training resources.
 * [QGIS Georeferencing Guide](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_raster/georeferencer.html) – Step-by-step instructions for georeferencing scanned maps.
-* [Semi-Automatic Classification Plugin](https://semiautomaticclassificationmanual.readthedocs.io/pl/latest/introduction.html) (SCP) – Plugin for supervised image classification and feature extraction. Example [video](https://fromgistors.blogspot.com/2024/09/tutorial-random-forest-classification.html) on a Random Forest classification using the SCP.
 * [Georeferencing in QGIS (YouTube)](https://www.youtube.com/watch?v=XV62QEk0Cxg) – Short tutorial video demonstrating the georeferencing process.
 
 **Change Detection and Spatial Comparison**
