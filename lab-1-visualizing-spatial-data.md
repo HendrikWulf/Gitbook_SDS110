@@ -51,6 +51,10 @@ To complete your mission, your map must include:
 **Note**: Make sure you define your own study area and topic, rather than simply reproducing the workflow example below.
 {% endhint %}
 
+{% hint style="info" %}
+**Explainer**: An annotated point layer is a vector point feature layer in your map where point symbols are paired with visible, readable text labels (annotations) directly on your map.
+{% endhint %}
+
 ### Your Deliverable
 
 As with all good scientific communication, your map report includes your figure _accompanied by a clear, well-structured caption._ In it, you’ll:
@@ -454,6 +458,10 @@ Then, in our new map view, we select this theme under _Set View Theme_ (<img src
 To switch between hillshades in the main map view, we simply toggle the visibility of the top hillshade layer in the _Layers_ panel. This step lets us easily observe the differences between the two.
 
 <figure><img src=".gitbook/assets/Screenshot 2025-04-12 at 11.14.57 (1).png" alt=""><figcaption><p>Comparison of the ERSI hillshade image (top) and the COP90m hillshade image (bottom).</p></figcaption></figure>
+
+{% hint style="info" %}
+**Extra point**: To get the extra point, provide visual evidence (e.g. a screenshot) showing that you created your own hillshade image.
+{% endhint %}
 
 ## Resources
 
