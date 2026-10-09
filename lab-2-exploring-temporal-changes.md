@@ -66,7 +66,7 @@ As a Spatial Detective, your case report must include:
 * [x] **Reflections**: Any dead ends? Clever workarounds? Insights?
 
 {% hint style="info" %}
-**Limit** your case report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+**Limit** your case report to a maximum of 6,500 characters including spaces (about two pages). _Figures and their captions are excluded from this limit._
 {% endhint %}
 
 ## Workflow

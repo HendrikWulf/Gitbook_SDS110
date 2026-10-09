@@ -77,7 +77,7 @@ As part of your assignment, prepare a short spatial case report that includes:
 * [x] Your interpretation of what the patterns suggest
 
 {% hint style="info" %}
-**Limit** your case report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+**Limit** your case report to a maximum of 6,500 characters including spaces (about two pages). _Figures and their captions are excluded from this limit._
 {% endhint %}
 
 Ready? Open QGIS, load your data, and start your spatial investigation. The city is counting on you.

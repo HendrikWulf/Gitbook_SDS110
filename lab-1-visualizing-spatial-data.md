@@ -66,7 +66,7 @@ As with all good scientific communication, your map report includes your figure 
 * [x] Acknowledge and [cite](https://www.citethisforme.com/) sources of design inspiration, if applicable.
 
 {% hint style="danger" %}
-**Limit** your map report to a maximum of **two pages** or 6,500 characters including spaces. It is fine write less, but make sure you tick all the boxes above. Figures and their captions are excluded from this limit.
+**Limit** your map report to a maximum of 6,500 characters including spaces, which are about two pages (without figures). It is fine write less, but make sure you tick all the boxes above. _Figures and their captions are excluded from this limit_.
 {% endhint %}
 
 ### Why this matters

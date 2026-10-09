@@ -60,7 +60,7 @@ Submit a short report (max. 1 page) that includes:
 * [x] **Reflection and Potential Improvements**: What are you proud of? What would you refine or add with more time?
 
 {% hint style="info" %}
-**Limit** your report to a maximum of **one page** or 3,000 characters including spaces. Figures and their captions are excluded from this limit.
+**Limit** your report to a maximum of 3,000 characters including spaces (about one page). _Figures and their captions are excluded from this limit._
 {% endhint %}
 
 By completing this lab, you’ll gain valuable experience in web cartography, which is a valuable skill in today’s spatial data science toolkit. Time to make your map clickable, accessible, and meaningful!

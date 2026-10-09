@@ -70,7 +70,7 @@ Your submission should include:
 * [x] Annotate any interesting floodplain features revealed in your REM (e.g., relict channels, terraces)
 
 {% hint style="info" %}
-**Limit** your lab report to a maximum of **two pages** or 6,500 characters including spaces. Figures and their captions are excluded from this limit.
+**Limit** your case report to a maximum of 6,500 characters including spaces (about two pages). _Figures and their captions are excluded from this limit._
 {% endhint %}
 
 This lab strengthens your skills in hydrological terrain modeling, interpolation, and cartographic interpretation; all key abilities for anyone working in environmental analysis, water management, or spatial storytelling.
