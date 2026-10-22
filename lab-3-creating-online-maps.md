@@ -292,7 +292,7 @@ We are almost there. These are the remaining steps to publish our data and maps 
 5. Follow the "Webmap" link in the "Maps" menu and check if your map meets your expectations.
    * If it does, you can make your map publicly available in the "Map Settings" `QGIS Cloud > Maps > Map Settings` .
    * If it does not, make the necessary adjustments before making your map publicly available.
-6. [Here is the weblink](https://qgiscloud.com/hendrik_wulf/CH_drinking_water_v3/?l=drinking_water_switzerland_epsg2056_cleaned_v1%20copy%2Cdrinking_water_switzerland_epsg2056_cleaned_v1%2CPositron%2COpenStreetMap!%2CLK10%20\(grau\)!\&t=CH_drinking_water_v3\&e=968589%2C6016903%2C984591%2C6025338) for the webmap example of this workflow.
+6. [Here is the weblink](https://qgiscloud.com/hendrik_wulf/CH_drinking_water_v3/?l=drinking_water_switzerland_epsg2056_cleaned_v1%20copy%2Cdrinking_water_switzerland_epsg2056_cleaned_v1%2CLK10\&t=CH_drinking_water_v3\&e=2667401%2C1238904%2C2699405%2C1255795) for the webmap example of this workflow.
 
 #### **Share your map**
 
