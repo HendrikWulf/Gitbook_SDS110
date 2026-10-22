@@ -306,7 +306,7 @@ We are almost there. These are the remaining steps to publish our data and maps 
 
 ### Optional: The extra mile
 
-If you enjoyed working with QGIS Cloud, you will probably enjoy this advanced lab on web mapping as well. In this optional lab, you'll use Python and Folium to create an interactive web map directly in Google Colab. You'll add custom basemaps, markers, and spatial features, and finally export and publish your map online via GitHub Pages... all without leaving your browser.&#x20;
+If you enjoyed working with QGIS Cloud, you will probably enjoy this advanced lab on web mapping as well. In this optional lab, you'll use Python and Folium to create an interactive web map directly in Google Colab. You'll add custom basemaps, markers, and spatial features, and finally export and [publish your map online](https://hendrikwulf.github.io/SDS110_lab3/) via GitHub Pages... all without leaving your browser.&#x20;
 
 If you want to give it a try, your journey begins [here](https://colab.research.google.com/github/HendrikWulf/SDS110_labs/blob/main/Lab_3_Folium_Web_Mapping.ipynb).\
 Completing this optional section can earn you up to 1 bonus point.

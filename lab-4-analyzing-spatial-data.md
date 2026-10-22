@@ -368,9 +368,9 @@ Spatial clustering shows _where_ accidents happen. But what about _when_, _how_,
 
 **Traffic Accident Data**
 
-* Swiss Traffic Accidents (2011–2024) **-** [Opendata.swiss Dataset](https://opendata.swiss/en/dataset/strassenverkehrsunfalle-mit-personenschaden)
+* Swiss Traffic Accidents (2011–2025) **-** [Opendata.swiss Dataset](https://opendata.swiss/en/dataset/strassenverkehrsunfalle-mit-personenschaden)
 * European Traffic Accidents Data - [European data portal](https://data.europa.eu/data/datasets?locale=en\&query=road+accidents\&page=1)
-* US Traffic Accidents Data - [Crash Database 2025](https://www.arcgis.com/home/item.html?id=3ef625ffe7ce4ef38be81ee6d80a5385)
+* US Traffic Accidents Data - [Crash Database 2026](https://www.arcgis.com/home/item.html?id=3ef625ffe7ce4ef38be81ee6d80a5385)
 
 **Tools and Tutorials**
 
